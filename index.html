@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOMU - Developer Portfolio </title>
+    <link rel="stylesheet" href="test.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left"> Somu's Portfolio </div>
+            <div class="right">
+                <ul>
+                    <li><a href="#home">Home </a></li>
+                    <li><a href="#about">About </a></li>
+                    <li><a href="#about">Services </a></li>
+                    <li><a href="#contact">Contact Me </a></li>
+                </ul>
+
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstsection" id="home">
+            <div class="leftsection">
+                <div class="text">
+                    Hi, My name is
+                </div>
+                <span class="name">Saumyajeet</span>
+
+                <div class="text">and I am a </div>
+
+                <span id="element"></span>
+                <div class="button">
+                    <button class="btn-flip">
+                        <a href="/" class="btn-flip" data-back="Download" data-front="Resume"></a>
+                    </button>
+                    <button class="glow-on-hover"> Hire Me </button>
+                </div>
+            </div>
+            <div class="rightsection">
+                <img src="bg.png">
+            </div>
+        </section>
+        <hr>
+        <div class="section-header">
+        </div>
+        <section class="section-primary" id="about">
+          <span class="Experience">
+              What I have done so far
+          </span>
+
+          <h1 class="text">
+              Work Experience
+          </h1>
+          <div class="workexp">
+            <img src="work.webp" height="350px" alt="anime ka choda" />
+            <p>
+            Dedicated engineering student with a strong foundation in programming languages, including C and Python, and proficiency in SQL for database management. Equipped with comprehensive UX design knowledge through Google certifications. Passionate about AI/ML and web development, constantly seeking opportunities to expand expertise and contribute to innovative projects. My goal is to collaborate with industry professionals, learn from real-world challenges, and develop solutions that drive technological advancement and improve efficiency.
+            </p>
+            </div>
+        </section>
+        <hr>
+        <section class="fourthsection" id="contact">
+            
+            <span class="Experience">
+                You can contact me Anytime
+            </span>
+            <h1 class="text">
+                Contact Me
+            </h1>
+
+            <!-- LINKED IN -->
+
+            <div class="box">
+                <div class="vertical">
+                    <img src="linked.png" alt="" class="src">
+                    <div class="vertical-desc">
+                        Click The link below
+                    </div>
+                    <div class="vertical-desc">
+                        <a href="https://www.linkedin.com/in/saumyajeet-sharma-981418230/"><button class="butt" >LinkedIn</button></a>
+                    </div>
+                </div>
+
+                <!-- GITHUB -->
+                <div class="vertical">
+                    <img src="github.png" alt="" class="src">
+                    <div class="vertical-desc">
+                        Github profile
+                    </div>
+                    <div class="vertical-desc">
+                        <a href="https://github.com/somuwashere"><button class="butt">GitHub</button></a>
+                    </div>
+                </div>
+
+
+                <div class="vertical"><img src="whatsaap.png" alt="" class="src">
+                    <div class="vertical-desc">
+                        Chat Here
+                    </div>
+                    <div class="vertical-desc">
+                        <a href="https://wa.me/9113441489"><button class="butt">whatsaap</button></a>
+                    </div></div>
+
+
+                <div class="vertical"><img src="telegram.png" alt="" class="src">
+                    <div class="vertical-desc">
+                        Chat with me
+                    </div>
+                    <div class="vertical-desc">
+                        <a href="https://t.me/+91 9113441489"><button class="butt">telegram</button></a>
+                    </div></div>
+
+
+                <div class="vertical"><img src="discord.png" alt="" class="src">
+                    <div class="vertical-desc">
+                        Discord service
+                    </div>
+                    <div class="vertical-desc">
+                        <a href="https://discordapp.com/users/961880430028677131"><button class="butt">discord</button></a>
+                    </div></div>
+
+
+                <div class="vertical"><img src="instagram.png" alt="" class="src">
+                    <div class="vertical-desc">
+                        Insta profile
+                    </div>
+                    <div class="vertical-desc">
+                        <a href="https://www.instagram.com/its_somu1428/"><button class="butt">instagram</button></a>
+                    </div></div>
+
+            </div>
+        </section>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Graphic Designer', 'Web Designer', 'Video Editor', 'Web Developer'],
+            typeSpeed: 100,
+        });
+    </script>
+
+
+</body>
+
+</html>

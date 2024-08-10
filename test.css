@@ -1,0 +1,399 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(0, 0, 33);
+    color: #fff;
+
+    font-family: 'poppins', sans-serif;
+}
+
+
+
+main hr {
+    border: 0;
+    background-color: blueviolet;
+    height: 1px;
+    margin: 50px 130px;
+}
+
+#element {
+    color: rgb(177, 28, 177);
+}
+
+.left {
+    font-size: 2rem;
+}
+
+.firstsection {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 100px 0;
+    
+
+    
+}
+
+.firstsection>div {
+    width: 30%;
+}
+
+.leftsection {
+    font-size: 3rem;
+
+
+
+}
+
+.rightsection img {
+    width: 100%;
+
+
+}
+
+.name {
+    color: rgb(184, 0, 184);
+}
+.fourthsection,
+.secondsection {
+    max-width: 80vw;
+    margin: auto;
+    height: 15vh;
+
+}
+
+.text {
+    color: beige;
+}
+.fourthsection h1,
+.secondsection h1 {
+    font-size: 2rem;
+}
+
+.Experience {
+    color: rgb(126, 120, 120);
+}
+
+.section-primary {
+    max-width: 1280px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  .workexp {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    align-items: center;
+  }
+  
+  .workexp p {
+    color: white;
+    max-width: 640px;
+    font-size: 1.17rem;
+  }
+  
+  .workexp img {
+    max-width: 440px;
+    aspect-ratio: 1 / 1;
+  }
+  
+
+.thirdsection {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 30px 0;
+
+}
+
+.lft img {
+    margin: auto;
+    width: 100%;
+    border: 0;
+    margin: 0px 130px;
+
+
+}
+
+.rigt {
+    color: white;
+    font-size: 1.5rem;
+    margin: 10px 50px;
+
+}
+
+.fourthsection .box {
+    width: 80vw;
+    background: white;
+    height: 2px;
+    margin: 100px 0;
+    display: flex;
+}
+
+.fourthsection .vertical {
+    height: 100px;
+    background: white;
+    width: 2px;
+    margin: 0 100px
+}
+.src {
+    width: 35px;
+    position: relative;
+    top: -40px;
+    left: -17px;
+}
+.vertical-desc{
+    position: relative;
+    top: 65px;
+    width: 100px;
+    color: white;
+}
+/* .vertical{
+    color: white;
+    
+} */
+
+/* .src-big{
+    width: 50px;
+    position: relative;
+    top: -50px;
+    left: -25px;
+} */
+
+nav .left>div {
+    color: rgb(79, 77, 141);
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+    background-color: rgb(6, 6, 59);
+    position: fixed;
+    top: 0px;
+    width: 100%;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+
+}
+
+nav ul li {
+    display: flex;
+    margin: 0 23px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(234, 17, 194);
+    transition: all .5s;
+    position: relative;
+}
+
+nav ul li a:hover {
+    color: transparent;
+    z-index: 1;
+    animation: fill 1s forwards;
+    -webkit-animation: fill 1s forwards;
+    -moz-animation: fill 1s forwards;
+    opacity: 1;
+    color: rgb(0, 0, 0);
+    width: 100%;
+    transition: all .5s;
+
+}
+
+@keyframes fill {
+    0% {
+        width: 0%;
+        
+    }
+
+    50% {
+        width: 100%;
+        
+    }
+
+    100% {
+        width: 100%;
+        
+        background-color: #ffffff;
+    }
+}
+
+.btn-flip {
+    opacity: 1;
+    outline: 0;
+    color: #fff;
+    line-height: 40px;
+    position: relative;
+    text-align: center;
+    letter-spacing: 1px;
+    display: inline-block;
+    text-decoration: none;
+    font-family: 'Open Sans';
+    text-transform: uppercase;
+}
+
+.btn-flip:hover::after {
+    opacity: 1;
+    transform: translateY(0) rotateX(0);
+}
+
+.btn-flip:hover::before {
+    opacity: 0;
+    transform: translateY(50%) rotateX(90deg);
+}
+
+.btn-flip::after {
+    top: 0;
+    left: 0;
+    opacity: 0;
+    width: 100%;
+    color: #323237;
+    display: block;
+    transition: 0.5s;
+    position: absolute;
+    background: #adadaf;
+    content: attr(data-back);
+    transform: translateY(-50%) rotateX(90deg);
+}
+
+.btn-flip::before {
+    top: 0;
+    left: 0;
+    opacity: 1;
+    color: #adadaf;
+    display: block;
+    padding: 0 30px;
+    line-height: 40px;
+    transition: 0.5s;
+    position: relative;
+    background: #323237;
+    content: attr(data-front);
+    transform: translateY(0) rotateX(0);
+}
+
+.glow-on-hover {
+    font-size: 1.27rem;
+    width: 150px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: #000
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 400% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+
+.butt {
+    border-radius: 4px;
+    background-color: #0d74d4;
+    border: none;
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+    width: auto;
+    transition: all 0.5s;
+    cursor: pointer;
+    
+    box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
+    padding-right: 16px;
+  }
+  
+  .butt{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .butt:after {
+    content: '➔';
+    position: absolute;
+    opacity: 0;  
+    top: 14px;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .butt:hover{
+    padding-right: 24px;
+    padding-left:8px;
+  }
+  
+  .butt:hover:after {
+    opacity: 1;
+    right: 10px;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
